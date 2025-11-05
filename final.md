@@ -76,7 +76,7 @@ x & \text{if } x > 0 \\
 **작동 방식**:
 - **훈련 시**: 각 노드를 확률 $p$ (keep_prob)로 유지, $(1-p)$로 제거
 - **Inverted Dropout 스케일링**: 
-$$a^{[l]} = \frac{a^{[l]}}{\text{keep\_prob}}$$
+$$a^{[l]} = \frac{a^{[l]}}{\text{keep prob}}$$
 
 훈련 시 활성화를 keep_prob로 나누어 스케일링
 - **테스트 시**: 드롭아웃 적용 안 함
